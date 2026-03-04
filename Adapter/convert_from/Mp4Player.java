@@ -1,6 +1,6 @@
-package Adapter.concrete_adaptees;
+package Adapter.convert_from;
 
-public class Mp4Player implements Adapter.AdvancedMediaPlayer {
+public class Mp4Player implements Adapter.convert_from.AdvancedMediaPlayer {
 
     @Override
     public void playVlx(String fileName) {

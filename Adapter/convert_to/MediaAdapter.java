@@ -1,13 +1,15 @@
-package Adapter;
+package Adapter.convert_to;
+
+import Adapter.convert_from.AdvancedMediaPlayer;
 
 public class MediaAdapter implements MediaPlayer {
     AdvancedMediaPlayer advancedMediaPlayer;
 
     public MediaAdapter(String audioType) {
         if (audioType.equalsIgnoreCase("vlc")) {
-            advancedMediaPlayer = new Adapter.concrete_adaptees.VlcPlayer();
+            advancedMediaPlayer = new Adapter.convert_from.VlcPlayer();
         } else if (audioType.equalsIgnoreCase("mp4")) {
-            advancedMediaPlayer = new Adapter.concrete_adaptees.Mp4Player();
+            advancedMediaPlayer = new Adapter.convert_from.Mp4Player();
         }
     }
 

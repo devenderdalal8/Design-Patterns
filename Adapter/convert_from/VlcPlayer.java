@@ -1,5 +1,4 @@
-package Adapter.concrete_adaptees;
-import Adapter.AdvancedMediaPlayer;
+package Adapter.convert_from;
 
 public class VlcPlayer implements AdvancedMediaPlayer {
 
