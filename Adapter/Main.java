@@ -15,3 +15,17 @@ public class Main {
         player.play("avi", "clip.avi");         // unsupported format
     }
 }
+
+
+//  Client
+//     │
+//     │ uses
+//     ▼
+//  «interface»          «class»
+//   MediaPlayer  ◄───  MediaAdapter ────► AdvancedMediaPlayer
+//   play()              play()              playVlc()
+//                       (translates)        playMp4()
+//                            │
+//                     ┌──────┴──────┐
+//                     ▼             ▼
+//                VlcPlayer      Mp4Player
