@@ -1,4 +1,4 @@
-package Proxy.real;
+package StructuralDesignPatterns.Proxy.real;
 
 public interface PaymentService {
     String processPayment(String userId , double amount);
