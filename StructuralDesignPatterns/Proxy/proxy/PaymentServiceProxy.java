@@ -1,4 +1,4 @@
-package StructuralDesignPatterns.Proxy.proxy;
+package Proxy.proxy;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import StructuralDesignPatterns.Proxy.real.PaymentService;
-import StructuralDesignPatterns.Proxy.real.RealPaymentService;
+import Proxy.real.PaymentService;
+import Proxy.real.RealPaymentService;
 
 public class PaymentServiceProxy implements PaymentService {
 

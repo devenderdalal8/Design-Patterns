@@ -1,4 +1,4 @@
-package StructuralDesignPatterns.Proxy.real;
+package Proxy.real;
 
 public class RealPaymentService implements PaymentService {
 

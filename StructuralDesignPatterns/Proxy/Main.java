@@ -1,7 +1,7 @@
-package StructuralDesignPatterns.Proxy;
+package Proxy;
 
-import StructuralDesignPatterns.Proxy.proxy.PaymentServiceProxy;
-import StructuralDesignPatterns.Proxy.real.PaymentService;
+import Proxy.proxy.PaymentServiceProxy;
+import Proxy.real.PaymentService;
 
 public class Main {
 
