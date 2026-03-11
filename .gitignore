@@ -1,1 +1,6 @@
 *.class
+target/
+node_modules/
+*.log
+.env
+*.xml
