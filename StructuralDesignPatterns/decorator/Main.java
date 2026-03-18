@@ -58,7 +58,7 @@ public class Main {
         allChannels.send("🔥 CRITICAL: Production database is DOWN!");
 
         // ─── Scenario 5: Dynamic decoration at runtime ───
-        System.out.println("\n━━━ Scenario 5: Dynamic — User Preferences ━━━\n");
+        System.out.println("\n━━━ Scenario 5: Dynamic — MediatorUser Preferences ━━━\n");
 
         // Simulate reading user preferences from DB
         boolean prefEmail = true;
@@ -142,7 +142,7 @@ public class Main {
 // 🟢 WHATSAPP sent → +1-555-0199
 // 🔔 PUSH sent → device-token-xyz-9876
 
-// ━━━ Scenario 5: Dynamic — User Preferences ━━━
+// ━━━ Scenario 5: Dynamic — MediatorUser Preferences ━━━
 
 // ┌─────────────────────────────────────
 // │ 🔔 Notification for : Charlie
@@ -186,7 +186,7 @@ public class Main {
 // | **Combinations** | 2³ = 8 subclasses | 3 decorators, stack freely |
 // | **Runtime change** | ❌ Fixed at compile time | ✅ Dynamic at runtime |
 // | **Add new channel** | Rewrite many classes | Add one new decorator |
-// | **User preferences** | ❌ Hard to handle | ✅ if/else wrapping |
+// | **MediatorUser preferences** | ❌ Hard to handle | ✅ if/else wrapping |
 // | **Responsibility** | Mixed in one class | Each decorator = one channel |
 
 // ---
@@ -197,7 +197,7 @@ public class Main {
 // |---|---|
 // | Add behavior without modifying original class | ✅ Yes |
 // | Combinations of features needed at runtime | ✅ Yes |
-// | User-configurable features (preferences) | ✅ Yes |
+// | MediatorUser-configurable features (preferences) | ✅ Yes |
 // | Subclassing causes class explosion | ✅ Yes |
 // | Simple single behavior extension | ❌ Use inheritance |
 
@@ -205,7 +205,7 @@ public class Main {
 // ```
 // // The magic — same interface, stackable behavior:
 
-// Notifier n = new BaseNotifier("User"); // just base
+// Notifier n = new BaseNotifier("MediatorUser"); // just base
 // Notifier n = new EmailDecorator(n, "..."); // + email
 // Notifier n = new SmsDecorator(n, "..."); // + sms
 // Notifier n = new SlackDecorator(n, "..."); // + slack

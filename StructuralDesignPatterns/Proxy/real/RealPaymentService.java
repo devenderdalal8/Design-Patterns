@@ -6,7 +6,7 @@ public class RealPaymentService implements PaymentService {
     public String processPayment(String userId, double amount) {
         String txnId = "TXN-" + System.currentTimeMillis();
         System.out.println("[PaymentService] ✔ Payment processed."
-                + " User: " + userId
+                + " MediatorUser: " + userId
                 + " | Amount: ₹" + amount
                 + " | TxnId: " + txnId);
         return txnId;
@@ -15,7 +15,7 @@ public class RealPaymentService implements PaymentService {
     @Override
     public String refundPayment(String userId, String transactionId) {
         System.out.println("[PaymentService] ↩ Refund processed."
-                + " User: " + userId
+                + " MediatorUser: " + userId
                 + " | TxnId: " + transactionId);
         return "REFUND-" + transactionId;
     }

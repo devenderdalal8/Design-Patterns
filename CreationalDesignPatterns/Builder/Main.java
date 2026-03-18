@@ -5,7 +5,7 @@ public class Main {
         User user1 = new User.Builder("John", "John@gmail.com").build();
         System.out.println(user1);
 
-        // Create User with required + optional fields
+        // Create MediatorUser with required + optional fields
         User user2 = new User.Builder("Jane", "Smith")
                 .setEmail("jane@example.com")
                 .setPhone("555-1234")
@@ -13,7 +13,7 @@ public class Main {
                 .build();
         System.out.println(user2);
 
-        // Create User with all fields
+        // Create MediatorUser with all fields
         User user3 = new User.Builder("Bob", "Johnson")
                 .setEmail("bob@example.com")
                 .setPhone("555-5678")

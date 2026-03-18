@@ -126,7 +126,7 @@ public class SmsSender implements NotificationSender {
 
 ``` java
 Notification notification = new InfoNotification(new EmailSender());
-notification.send("user@example.com", "System update");
+notification.send("mediatorUser@example.com", "System update");
 
 notification.switchSender(new SmsSender());
 notification.send("9876543210", "System update");

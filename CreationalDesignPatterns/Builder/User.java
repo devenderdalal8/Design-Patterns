@@ -36,7 +36,7 @@ public class User {
     }
 
     public String toString() {
-        return "User{name='" + name + "', email='" + email + "', age=" + age + ", address='" + address + "', phone='"
+        return "MediatorUser{name='" + name + "', email='" + email + "', age=" + age + ", address='" + address + "', phone='"
                 + phone + "'}";
     }
 

@@ -23,7 +23,7 @@ public class Main {
         logger.log(Level.DEBUG, "Entering method calculateTotal()");
 
         System.out.println("\n--- Logging INFO ---");
-        logger.log(Level.INFO, "User 'alice' logged in successfully");
+        logger.log(Level.INFO, "MediatorUser 'alice' logged in successfully");
 
         System.out.println("\n--- Logging WARN ---");
         logger.log(Level.WARN, "Disk usage above 80%");
