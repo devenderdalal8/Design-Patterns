@@ -1,7 +1,5 @@
 package BehavioralDesignPatterns.State;
 
-import BehavioralDesignPatterns.Mediator.ChatMediator;
-
 public class MediaPlayer {
     private State state;
 
